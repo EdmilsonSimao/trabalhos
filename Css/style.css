@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; /* Efeito Paralax */
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+    
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    
+}
+
+.menu .item-menu{
+    text-decoration: none;
+    display: flex;
+    
+}
+
+.menu a img{
+   margin-top: -10px;
+}
+.menu .item-menu a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    border: 0 solid black;
+    background-color: rgba(145, 145, 145, 0.801);
+    margin-left: 10px;
+    margin-bottom: 50px;
+    padding: 4px;
+    border-radius: 5px;
+
+}
+
+.menu .item-menu a::after{
+    content: "";
+    background-color: rgb(247, 222, 4);
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+.menu .item-menu a:hover:after{
+    width: 100%;
+
+}
+section, footer{
+    margin: 0 auto;
+    padding: 50px 10;
+}
+.banner{
+    text-align: center;
+    padding: 10%;
+    color:yellow
+}
+h1{
+  font-size: 60px;
+  margin: 20px ;
+
+}
+
+p{
+    font-size: 24px;
+}
+
+/*sobre mim*/
+.sobre{
+    text-align: center;
+    background-color: rgba(8, 6, 6, 0.548);
+    color: white;
+}
+.sobre h3{
+    background-color: #dedede38;
+    margin: 0 -40px;
+    padding-bottom: 10px;
+}
+.sobre .sobre-mim{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.sobre .sobre-mim .text-sobre{
+    width: 50%;
+    padding-top: 60px;
+}
+
+.sobre .sobre-mim .text-sobre p{
+    font-size: 14px;
+    text-align: justify;
+}
+
+.sobre .sobre-mim .img-sobre{
+    width: 50%;
+  
+}
+
+.sobre .sobre-mim .img-sobre img{
+    width: 100%;
+
+}
+.sobre h3{
+    padding-top: 20px;
+    font-size: 40px;
+}
+
+.conhecimento{
+    text-align: center;
+    background-color: #6b686898;
+}
+
+.conhecimento h3{
+    padding: 20px;
+    font-size: 30px;
+   
+}
+
+.conhecimento .image-conhecimento{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.conhecimento .image-conhecimento img{
+    width: 150px; 
+    border-radius: 15px;
+    background-color: rgba(230, 241, 247, 0.658);
+    transition: 0.3s;
+    
+}
+.conhecimento .image-conhecimento img:hover{
+    width: 130px; 
+
+}
+
+.conhecimento .image-conhecimento div p{
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+.conhecimento .image-conhecimento div .php{
+   padding: 30px 25px 55px 25px;
+    width: 100px;
+    transition: 0.3s;
+}
+.conhecimento .image-conhecimento div .php:hover{
+    width: 80px;
+}
+
+/*Portifolio*/
+
+.portifolio{
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.portifolio h3{
+    text-align: center;
+    padding: 150px;
+    font-size: 80px;
+    color: yellow;
+    text-transform: uppercase;
+}
+
+/*scrollveal*/
+.scroll, .scroll-1, .scroll-2, .scroll-3{
+    visibility: hidden;
+}                         
